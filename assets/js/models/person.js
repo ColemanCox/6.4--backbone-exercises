@@ -6,12 +6,14 @@ var Person = Backbone.Model.extend({
     lastName: ' ',
     emailAddress: ' ',
     phoneNumber: ' '
-  }
+  },
+  urlRoot: 'http://tiny-lr.herokuapp.com/collections/evernote'
 });
 
-
-var PersonList = Backbone.Collection.extend({
-  model: Todo,
-  url: 'http://tiny-lr.herokuapp.com/collections/evernote'
+var jimmy = new Person({
+  firstName: 'Jimmy',
+  lastName:'Jones',
+  emailAddress: 'www.ebay.com',
+  phoneNumber: '(870)444-5555'
 
 });
