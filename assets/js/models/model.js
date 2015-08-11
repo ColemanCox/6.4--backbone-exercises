@@ -1,19 +1,17 @@
-
+var PersonURL = 'http://tiny-lr.herokuapp.com/collections/evernote';
 var Person = Backbone.Model.extend({
-  idAttributes: '_id',
+  idAttributes: _id,
   defaults: {
-    firstName: ' ',
-    lastName: ' ',
-    emailAddress: ' ',
-    phoneNumber: ' '
-  },
-  urlRoot: 'http://tiny-lr.herokuapp.com/collections/evernote'
+    firstName: '',
+    lastName: '',
+    emailAddress: '',
+    phoneNumber: ''
+  }
+
 });
 
-var jimmy = new Person({
-  firstName: 'Jimmy',
-  lastName:'Jones',
-  emailAddress: 'www.ebay.com',
-  phoneNumber: '(870)444-5555'
+var PersonList = Backbone.Collection.extend({
+  model: Person,
+  url: 'http://tiny-lr.herokuapp.com/collections/evernote'
 
 });

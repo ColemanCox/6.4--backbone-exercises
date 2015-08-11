@@ -11,9 +11,21 @@
 </head>
 <body>
     <div id="target"></div>
+<input type="text" class="search-bar" placehholder="Search Someone">
 
-<input type="text" class="search-bar" placehholder="Search">
+<template id="person-template">
+    {{#each this as |person|}}
+<div>
+   <ul class = "personView">
+      <li>firstName</li>
+      <li>lastName</li>
+      <li>emailAddress</li>
+      <li>phoneNumber</li>
+  </ul>
 
+    </div>
+    {{/each}}
+</template>
     <script src="vendor.js"></script>
     <script src="app.js"></script>
 </body>
