@@ -1,4 +1,3 @@
-var PersonURL = 'http://tiny-lr.herokuapp.com/collections/evernote';
 var Person = Backbone.Model.extend({
   idAttributes: _id,
   defaults: {
@@ -12,6 +11,6 @@ var Person = Backbone.Model.extend({
 
 var PersonList = Backbone.Collection.extend({
   model: Person,
-  url: 'http://tiny-lr.herokuapp.com/collections/evernote'
+  url: 'http://tiny-lr.herokuapp.com/collections/cc-evernote'
 
 });
