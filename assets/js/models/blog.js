@@ -3,9 +3,8 @@ var Blog = Backbone.Model.extend({
   idAttribute: '_id',
   defaults: {
     title: '',
-    body: '',
+    body: ''
 
-    done: false
   }
 });
 
@@ -14,5 +13,5 @@ var Bloggy = Backbone.Collection.extend({
   url: 'http://tiny-lr.herokuapp.com/collections/cc-blog'
 });
 
-return Bloggy;
+return Backbone.Collection;
 

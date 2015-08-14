@@ -1,3 +1,5 @@
+
 var BlogView = Backbone.View.extend({
-  //template....it think
+  tagName:'li',
+  className: 'blog'
 });
