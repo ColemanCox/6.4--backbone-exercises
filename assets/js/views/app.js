@@ -8,7 +8,7 @@ var BlogView = Backbone.View.extend({
     },
 
   render: function() {
-    _that = this;
+    _this = this;
     _.each(this.collection.models, function(item) {
         that.renderBlog(item);
       }, this);
