@@ -13,5 +13,5 @@ var Bloggy = Backbone.Collection.extend({
   url: 'http://tiny-lr.herokuapp.com/collections/cc-blog'
 });
 
-return Backbone.Collection;
+;
 
